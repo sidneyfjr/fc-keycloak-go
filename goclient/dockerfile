@@ -1,0 +1,12 @@
+FROM golang 
+
+RUN useradd -ms /bin/bash  go
+USER go
+
+WORKDIR /usr/src/app
+COPY *.go /usr/src/app/
+RUN  go mod init app
+RUN  go get github.com/coreos/go-oidc
+
+
+CMD [ "go", "run", "/usr/src/app/main.go" ]
