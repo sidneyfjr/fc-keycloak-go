@@ -17,5 +17,5 @@ Pare o contianer e rode novamente com docker-compose up -d --build.
 
 Depois, acesse a aplicação go em http://localhost:8081.
 
-Informe o usuário myuser e a senha que você criou. Após isso você será redirecionado para a aplicação go que exibirá os tokens que vocêrecebeu do keycloak.
+Informe o usuário myuser e a senha que você criou. Após isso você será redirecionado para a aplicação go que exibirá os tokens que você recebeu do keycloak.
 
